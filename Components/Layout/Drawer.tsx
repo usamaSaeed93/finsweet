@@ -13,8 +13,6 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 
 type Anchor = 'top' | 'left' | 'bottom' | 'right';
-
-
 export default function TemporaryDrawer() {
   const [state, setState] = React.useState({
     top: false,
@@ -39,19 +37,21 @@ export default function TemporaryDrawer() {
 
   const list = (anchor: Anchor) => (
     <Box
-      sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250, bgcolor: '#002045',height:"100%" }}
+      sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250,height:"100%" }}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
+      className='bg-white dark:bg-[#1D2130]'
+
     >
       <List>
         {['Home','Services', 'About', 'Products'].map((text, index) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>
               <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon sx={{ color: 'white' }} /> : <MailIcon sx={{ color: 'white' }} />}
+                {index % 2 === 0 ? <InboxIcon className='text-[#1D2130] dark:text-white' /> : <MailIcon className='text-[#1D2130] dark:text-white' />}
               </ListItemIcon>
-              <ListItemText primary={text} className={`${index==0? "text-[#F17D21]" : "text-white"}`}/>
+              <ListItemText primary={text} className='text-[#1D2130] dark:text-white'/>
             </ListItemButton>
           </ListItem>
         ))}
@@ -60,11 +60,11 @@ export default function TemporaryDrawer() {
   );
 
   return (
-    <div className='bg-layoutBlue'>
+    <div className='bg-white dark:bg-[#1D2130]'>
       {(['right'] as const).map((anchor) => (
         <React.Fragment key={anchor}>
           <Button onClick={toggleDrawer(anchor, true)}>
-            <DensityMediumIcon sx={{ color: '#fff' }} />
+            <DensityMediumIcon className='text-[#1D2130] dark:text-white'/>
           </Button>
           <Drawer
             anchor={anchor}

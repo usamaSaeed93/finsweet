@@ -24,7 +24,7 @@ const Discover: React.FC = () => {
           <Image src={sales} alt="arrow" />
           <div className="flex flex-col">
 <p className="font-roboto text-xl font-bold leading-140 text-light dark:text-dark">Sales Targeting</p>
-          <p className="font-roboto text-base font-medium leading-150 text-light">
+          <p className="font-roboto text-base font-medium leading-150 text-light dark:text-dark">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod.
           </p>
@@ -34,7 +34,7 @@ const Discover: React.FC = () => {
           <Image src={activity} alt="arrow" />
           <div className="flex flex-col">
 <p className="font-roboto text-xl font-bold leading-140 text-light dark:text-dark">Sales Targeting</p>
-          <p className="font-roboto text-base font-medium leading-150 text-light">
+          <p className="font-roboto text-base font-medium leading-150 text-light dark:text-dark">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod.
           </p>
@@ -44,7 +44,7 @@ const Discover: React.FC = () => {
           <Image src={project} alt="arrow" />
           <div className="flex flex-col">
 <p className="font-roboto text-xl font-bold leading-140 text-light dark:text-dark">Sales Targeting</p>
-          <p className="font-roboto text-base font-medium leading-150 text-light">
+          <p className="font-roboto text-base font-medium leading-150 text-light dark:text-dark">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod.
           </p>

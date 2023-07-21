@@ -7,7 +7,7 @@ import logo4 from "../../public/Images/svg/Logo 4.svg"
 import logo5 from "../../public/Images/svg/Logo 5.svg"
 const LogoIpsum: React.FC = () => {
   return (
-    <div className="flex flex-col sm:flex-row gap-5 max-w-[1200px] m-auto mt-4 gap-y-10 sm:mt-32 justify-evenly items-center">
+    <div className="flex flex-col sm:flex-row gap-5 max-w-[1200px] m-auto mt-4 gap-y-10 sm:mt-32 justify-evenly items-center dark:hidden">
       <Image
         src={icon}
         alt="icon"

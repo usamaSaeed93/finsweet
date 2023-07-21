@@ -13,7 +13,7 @@ const Trial:React.FC=() =>{
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
           sed diam voluptua invidunt ut labore.
         </p>
-        <button className="w-44 h-12 rounded-md bg-[#1D2130] font-normal text-white text-lg mt-6">
+        <button className="w-44 h-12 rounded-md  bg-[#1D2130] dark:bg-[#2B2E3C] font-normal text-white text-lg mt-6">
           Get Free Trial
           </button>
       </div>

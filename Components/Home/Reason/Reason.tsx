@@ -19,21 +19,21 @@ const Reason: React.FC = () => {
       <div className="max-w-[350px] sm:max-w-[574px] gap-y-6 flex flex-col justify-center items-center">
         <div className="flex flex-row gap-5 justify-center items-center">
           <Image src={arrow} alt="arrow" />
-          <p className="font-roboto text-base font-medium leading-150 text-light">
+          <p className="font-roboto text-base font-medium leading-150  text-light dark:text-dark">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod.
           </p>
         </div>
         <div className="flex flex-row gap-5 justify-center items-center">
           <Image src={arrow} alt="arrow" />
-          <p className="font-roboto text-base font-medium leading-150 text-light">
+          <p className="font-roboto text-base font-medium leading-150  text-light dark:text-dark">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod.
           </p>
         </div>
         <div className="flex flex-row gap-5 justify-center items-center">
           <Image src={arrow} alt="arrow" />
-          <p className="font-roboto text-base font-medium leading-150 text-light">
+          <p className="font-roboto text-base font-medium leading-150  text-light dark:text-dark">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod.
           </p>
