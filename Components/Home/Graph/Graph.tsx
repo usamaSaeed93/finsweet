@@ -1,6 +1,9 @@
 "use client"
 import React, { useState } from 'react';
-import ReactApexChart from 'react-apexcharts';
+import dynamic from 'next/dynamic'
+    
+const Chart = dynamic(() => import('react-apexcharts'), { ssr: false });
+
 
 interface GraphData {
   x: string;
@@ -32,7 +35,7 @@ const SynchronizedChart: React.FC<SynchronizedChartProps> = () => {
 
   const chartOptions = {
     xaxis: {
-      type: 'category',
+      type: undefined,
       categories: graphData1.map((data) => data.x),
     },
     yaxis: {
@@ -73,7 +76,7 @@ const SynchronizedChart: React.FC<SynchronizedChartProps> = () => {
 
   return (
     <div>
-      <ReactApexChart
+      <Chart
         options={chartOptions}
         series={[
           { name: 'Graph 1', data: graphData1 },
